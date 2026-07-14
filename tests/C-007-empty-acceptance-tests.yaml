@@ -1,0 +1,10 @@
+component:
+  id: C-007
+  name: Sentinel Request Gateway
+  release: Release1-MVP
+  owns: "Inbound request authentication, rate limiting, structured request logging"
+  does_not_own: "Downstream service routing, payload transformation, response caching"
+  fail_closed_behaviour: "If the gateway is unavailable, all inbound requests are rejected with HTTP 503. No requests are passed downstream without gateway validation."
+  cr_authority: "BFS-SPEC-003 Section 4.2"
+  zones: ["Zone-External"]
+  acceptance_tests: []
