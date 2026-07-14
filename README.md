@@ -252,7 +252,7 @@ PASS - no duplicate packet IDs under concurrent execution
 
 ## Notes on the exercise
 
-- **Time spent:** ~2.5 hours.
+- **Time spent:** ~5 hours (started 2026-07-14T10:00:00Z, submitted 2026-07-14T15:08:00Z).
 - **Straightforward:** the module split, the policy rules, and the JSON/exit-code
   contract — the spec is precise, so these mapped directly to code.
 - **Harder than expected:** getting the atomic counter genuinely correct *and*
